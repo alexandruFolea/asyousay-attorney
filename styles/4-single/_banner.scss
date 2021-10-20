@@ -1,0 +1,45 @@
+.homepage__banner {
+	height: 70rem;
+	background: url('https://images.unsplash.com/photo-1491774189810-7512f9934d13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2370&q=80');
+	@include bg-no-repeat;
+	display: flex;
+	align-items: center;
+	position: relative;
+	font-family: $main-font;
+	margin-bottom: 10rem;
+	box-shadow: $box-shadow;
+
+	&__text {
+		position: absolute;
+		top: 35%;
+		left: 10%;
+		z-index: 100;
+		line-height: 0.55;
+
+		h1 {
+			font-size: 15rem;
+			color: rgb(185, 137, 98);
+			animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+		}
+
+		h2 {
+			font-size: 11rem;
+			color: $mono-800;
+			margin-left: 12rem;
+			text-shadow: $text-shadow;
+			animation: slide-in-right 0.5s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+				both;
+			letter-spacing: 0.5rem;
+		}
+
+		h3 {
+			font-size: 9rem;
+			color: $mono-700;
+			margin-left: 6rem;
+			text-shadow: $text-shadow;
+			animation: slide-in-right 0.5s 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+				both;
+			letter-spacing: 0.3rem;
+		}
+	}
+}

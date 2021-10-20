@@ -1,7 +1,3 @@
 .homepage {
-	display: flex;
-	font-size: 2.5rem;
-	font-family: $display-font;
-	@include flex-center-row;
-	flex: 1;
+	min-height: 100vh;
 }

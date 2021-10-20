@@ -1,14 +1,45 @@
 nav {
-	height: 6rem;
-	box-shadow: $box-shadow;
-	font-family: $display-font;
-	display: flex;
-	align-items: center;
-	padding: 0 4rem;
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	padding: 2.5rem 0;
+	background: $mono-800;
+	.navbar {
+		font-family: $display-font;
+		display: flex;
+		padding: 0 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-	a {
-		font-size: 1.6rem;
-		color: $mono-200;
+		max-width: 130rem;
+		margin: 0 auto;
+
+		&__logo {
+			a {
+				font-size: 1.8rem;
+				color: $mono-200;
+			}
+		}
+
+		&__list {
+			display: flex;
+			list-style: none;
+			// width: 100%;
+
+			li {
+				a {
+					margin-right: 1.5rem;
+					padding: 0 1rem;
+					color: $mono-200;
+					font-size: 1.4rem;
+					font-family: $main-font;
+					text-transform: uppercase;
+				}
+			}
+		}
 	}
 }
