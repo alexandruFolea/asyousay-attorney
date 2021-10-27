@@ -1,0 +1,12 @@
+.arrow-down {
+	color: $dark-beige;
+	background: rgba($blue-250, 0.4);
+	border-radius: 50%;
+	padding: 1rem;
+	position: absolute;
+	bottom: 10%;
+	left: 90%;
+	height: 6rem;
+	width: 6rem;
+	animation: bounce-in-top 3s infinite both;
+}

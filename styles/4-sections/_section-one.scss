@@ -1,0 +1,41 @@
+.section__one {
+	min-height: 100vh;
+	width: 100%;
+	background: url('/landing-bg.jpeg');
+	@include bg-no-repeat;
+	position: relative;
+
+	&__text {
+		position: absolute;
+		color: $dark-beige;
+		top: 20%;
+		left: 10%;
+		@include md-max {
+			top: 30%;
+			font-size: 10rem;
+		}
+
+		h1 {
+			font-size: 15rem;
+			font-family: $display-font;
+			color: $dark-beige;
+			line-height: 0.7;
+
+			@include md-max {
+				font-size: 10rem;
+			}
+			span {
+				color: $mono-800;
+				font-size: 10rem;
+				text-shadow: $box-shadow;
+				font-family: $main-font;
+				@include md-max {
+					font-size: 7rem;
+				}
+				@include sm-max {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
+}

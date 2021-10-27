@@ -2,7 +2,6 @@
 // will change with each project
 
 $blue-100: hsl(239, 94%, 19%);
-$blue-150: hsl(210, 43%, 22%);
 $blue-200: hsl(214, 97%, 27%);
 $blue-300: hsl(201, 100%, 36%);
 $blue-400: hsl(195, 100%, 39%);
@@ -12,8 +11,8 @@ $blue-700: hsl(190, 76%, 82%);
 $blue-800: hsl(190, 77%, 88%);
 
 //monocromatic
-$mono-100: hsl(0, 0%, 0%);
-$mono-200: hsl(210, 10%, 23%);
+$mono-100: hsl(0, 0%, 13%);
+$mono-200: hsl(213, 12%, 15%);
 $mono-300: hsl(210, 9%, 31%);
 $mono-400: hsl(208, 7%, 46%);
 $mono-500: hsl(210, 11%, 71%);
@@ -22,11 +21,14 @@ $mono-700: hsl(210, 14%, 89%);
 $mono-800: hsl(210, 16%, 93%);
 $mono-900: hsl(210, 17%, 98%);
 
-$dark-beige: rgb(221, 190, 154);
-
-//font
-$main-font: 'Roboto', sans-serif;
-$display-font: 'Black Ops One', cursive;
-
 $box-shadow: 0.3rem 0.3rem 0.8rem rgba($mono-400, 0.3);
 $text-shadow: 0.3rem 0.3rem 0.8rem rgba($mono-400, 0.6);
+
+$main-font: 'Inter', sans-serif;
+$display-font: 'Merienda', cursive;
+
+$light-beige: hsl(31, 57%, 61%);
+$medium-beige: hsl(30, 57%, 57%);
+$dark-beige: hsl(33, 45%, 54%);
+$blue-150: hsl(210, 43%, 22%);
+$blue-250: hsl(219, 20%, 25%);

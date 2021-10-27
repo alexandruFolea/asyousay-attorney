@@ -1,0 +1,69 @@
+.section__five {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: $blue-250;
+
+	&__wrapper {
+		height: 100%;
+		width: 100%;
+		max-width: 130rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&__top {
+		padding: 4rem;
+		text-align: center;
+		color: $mono-800;
+		h1 {
+			font-size: 4rem;
+			font-family: $display-font;
+			margin-bottom: 3rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+			padding: 0 4rem;
+			max-width: 70%;
+			line-height: 2;
+			margin: 0 auto;
+			font-family: $main-font;
+			color: $mono-600;
+			@include md-max {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.testimonial__grid__container {
+		width: 100%;
+		color: $mono-800;
+		display: grid;
+		padding: 0 4rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 10rem;
+		@include md-max {
+			grid-template-columns: 1fr;
+			padding: 0 4rem;
+		}
+
+		.testimonial__card {
+			font-size: 1.6rem;
+			line-height: 2;
+			display: flex;
+			flex-direction: column;
+			@include md-max {
+				margin-bottom: 10rem;
+			}
+		}
+		.card__quote__right {
+			align-self: flex-end;
+		}
+	}
+}

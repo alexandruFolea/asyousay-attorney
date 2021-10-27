@@ -1,0 +1,35 @@
+.member__card {
+	// height: 60rem;
+	// width: 40rem;
+	position: relative;
+
+	img {
+		object-fit: cover;
+	}
+
+	&__info {
+		width: 80%;
+		position: absolute;
+		bottom: -10%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: $mono-800;
+		color: $blue-250;
+		// color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 2rem;
+
+		h3 {
+			font-family: $main-font;
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-family: $display-font;
+			font-size: 1.6rem;
+		}
+	}
+}

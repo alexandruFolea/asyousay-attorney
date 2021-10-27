@@ -1,0 +1,34 @@
+.footer__left {
+	padding: 2rem;
+	border-right: 0.1rem solid rgba($mono-500, 0.2);
+	.left__logo {
+		display: inline-block;
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+		font-family: $display-font;
+		margin-bottom: 3rem;
+		border-bottom: 0.3rem solid $light-beige;
+	}
+
+	.left__info {
+		font-size: 1.2rem;
+		font-family: $main-font;
+		color: $mono-500;
+		margin-bottom: 3rem;
+		line-height: 1.5;
+	}
+
+	.left__social {
+		svg {
+			height: 4rem;
+			width: 4rem;
+			margin-right: 2rem;
+			cursor: pointer;
+			transition: color 0.3s ease-out;
+
+			&:hover {
+				color: $light-beige;
+			}
+		}
+	}
+}

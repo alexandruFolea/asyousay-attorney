@@ -1,9 +1,5 @@
-const practiceAreas = () => {
-	return (
-		<div>
-			<h1>Practice areas</h1>
-		</div>
-	);
+const index = () => {
+	return <div>practice page</div>;
 };
 
-export default practiceAreas;
+export default index;

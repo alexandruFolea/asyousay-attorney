@@ -1,0 +1,40 @@
+.section__six {
+	width: 100%;
+	max-width: 130rem;
+	margin: 0 auto;
+	height: 30rem;
+	@include flex-center-row;
+	@include md-max {
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 2.6rem;
+		font-family: $main-font;
+		color: $blue-250;
+		text-align: center;
+		margin-right: 3rem;
+		@include md-max {
+			font-size: 2rem;
+			margin-bottom: 4rem;
+		}
+	}
+
+	a {
+		padding: 2rem 6rem;
+		font-family: $display-font;
+		color: $light-beige;
+		background: $blue-250;
+		font-size: 2rem;
+		border-radius: 0.5rem;
+		transition: all 0.25s ease-in;
+		@include md-max {
+			font-size: 1.6rem;
+		}
+
+		&:hover {
+			box-shadow: $box-shadow;
+			transform: translateY(-1rem);
+		}
+	}
+}

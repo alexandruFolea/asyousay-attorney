@@ -1,0 +1,41 @@
+.section__two {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	position: relative;
+
+	&__text {
+		font-size: 3.2rem;
+		font-family: $display-font;
+		padding: 6rem 4rem 2rem 4rem;
+		border-bottom: 0.3rem solid $light-beige;
+		margin-bottom: 4rem;
+
+		@include md-max {
+			font-size: 2.2rem;
+		}
+	}
+
+	&__grid__container {
+		height: 100%;
+		width: 100%;
+		padding: 5rem 0;
+		max-width: 130rem;
+		margin: 0 auto;
+		border-left: 0.3rem solid $dark-beige;
+		border-right: 0.3rem solid $dark-beige;
+		align-items: center;
+		justify-items: center;
+		grid-gap: 3rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+		@include md-max {
+			border-left: none;
+			border-right: none;
+			margin-bottom: 5rem;
+		}
+	}
+}

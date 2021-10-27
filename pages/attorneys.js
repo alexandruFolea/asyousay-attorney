@@ -1,5 +1,5 @@
 const attorneys = () => {
-	return <div>our attorneys</div>;
+	return <div>attorneys page</div>;
 };
 
 export default attorneys;

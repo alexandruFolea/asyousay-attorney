@@ -1,0 +1,18 @@
+.grid__item {
+	height: 20rem;
+	width: 20rem;
+	background: $blue-250;
+	color: $mono-800;
+	@include flex-center-row;
+	font-size: 2.2rem;
+	flex-wrap: wrap;
+	transition: all 0.2s ease-in-out;
+	font-family: $main-font;
+	text-align: center;
+	border-radius: 0.6rem;
+
+	&:hover {
+		box-shadow: $box-shadow;
+		transform: scale(1.03);
+	}
+}

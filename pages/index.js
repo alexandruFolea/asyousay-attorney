@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Card from '../components/Card';
-import { BsHeadset } from 'react-icons/bs';
-import ResultLink from '../components/ResultLink';
+import SectionOne from '../components/sections/SectionOne';
+import SectionTwo from '../components/sections/section-two/SectionTwo';
+import SectionThree from '../components/sections/section-three/SectionThree';
+import SectionFour from '../components/sections/section-four/SectionFour';
+import SectionFive from '../components/sections/section-five/SectionFive';
+import SectionSix from '../components/sections/section-6/SectionSix';
 
 export default function Home() {
 	return (
@@ -13,94 +16,12 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<div className='homepage__banner'>
-				<div className='homepage__banner__text'>
-					<h1>Results</h1>
-					<h3>that speak for</h3>
-					<h2>themselves</h2>
-				</div>
-			</div>
-
-			<div className='offer__container'>
-				<div className='card__container'>
-					<Card name='Matt Copeland' role='Managin Attorney'>
-						{/* <Image src='/att3.jpeg' alt='' width='200' height='300' /> */}
-					</Card>
-					<Card name='Angela Merkel' role='Senior Associate'>
-						{/* <Image src='/att4.jpeg' alt='' width='200' height='300' /> */}
-					</Card>
-				</div>
-
-				<div className='consultation__container'>
-					<div className='container__left'>
-						<div className='left__info'>
-							<h3>
-								<BsHeadset /> 312-555-8999
-							</h3>
-						</div>
-						<div className='info__cta'>
-							<p>Call Us for Free Consultation</p>
-						</div>
-					</div>
-					<div className='container__right'>
-						<button> FREE CASE CONSULTATION</button>
-					</div>
-				</div>
-			</div>
-			<div className='result__container'>
-				<h1>
-					<span>Results that </span>Speak for Themselves
-				</h1>
-				<h4>BUDGET-CONSCIOUS RESULTS-DRIVEN LAWFIRM</h4>
-				<div className='result__grid__container'>
-					<ResultLink>
-						<Link href='practice/employment-law'>
-							<a>EMPLOYMENT LAW</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='practice/intelectual-property-law'>
-							<a>INTELECTUAL PROPERTY LAW</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='practice/international-commercial-law'>
-							<a>INTERNATIONAL COMMERCIAL LAW</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='practice/flsa-litigation'>
-							<a>FLSA LITIGATION</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='/practice/corporate-business-law'>
-							<a>CORPORTATE / BUSINESS LAW</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='/practice/corporate'>
-							<a>CORPORTATE LITIGATION</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='/practice/commercial'>
-							<a>COMMERCIAL LAW</a>
-						</Link>
-					</ResultLink>
-					<ResultLink>
-						<Link href='/practice/business-aggreements'>
-							<a>BUSINESS AGGREMENTS</a>
-						</Link>
-					</ResultLink>
-				</div>
-			</div>
-			<div className='contact__link__container'>
-				<span>Got a legal question? get in touch today!</span>
-				<Link href='/contact'>
-					<a>Contact us Now</a>
-				</Link>
-			</div>
+			<SectionOne />
+			<SectionTwo />
+			<SectionThree />
+			<SectionFour />
+			<SectionFive />
+			<SectionSix />
 		</div>
 	);
 }

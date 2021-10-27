@@ -9,6 +9,9 @@
 @import '1-helpers/typography';
 
 //2
+@import '2-small/grid-item';
+@import '2-small/card';
+@import '2-small/arrow-down';
 
 //3 layout
 @import '3-layout/footer';
@@ -16,9 +19,15 @@
 @import '3-layout/layout';
 
 //4 single components
-@import '4-single/banner';
-@import '4-single/offer';
-@import '4-single/results';
+
+@import '4-sections/section-one';
+@import '4-sections/section-two';
+@import '4-sections/section-three';
+@import '4-sections/section-four';
+@import '4-sections/section-five';
+@import '4-sections/section-six';
+@import '4-sections/footer-left';
+@import '4-sections/footer-center';
+@import '4-sections/footer-right';
 
 //5 pages
-@import '5-pages/home';

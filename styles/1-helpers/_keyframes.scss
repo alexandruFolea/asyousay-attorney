@@ -8,3 +8,38 @@
 		opacity: 1;
 	}
 }
+
+@keyframes bounce-in-top {
+	0% {
+		transform: translateY(0);
+		animation-timing-function: ease-in;
+	}
+	38% {
+		transform: translateY(0);
+		animation-timing-function: ease-out;
+	}
+	55% {
+		transform: translateY(-30px);
+		animation-timing-function: ease-in;
+	}
+	72% {
+		transform: translateY(0);
+		animation-timing-function: ease-out;
+	}
+	81% {
+		transform: translateY(-18px);
+		animation-timing-function: ease-in;
+	}
+	90% {
+		transform: translateY(0);
+		animation-timing-function: ease-out;
+	}
+	95% {
+		transform: translateY(-8px);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: translateY(0);
+		animation-timing-function: ease-out;
+	}
+}

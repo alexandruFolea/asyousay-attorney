@@ -1,0 +1,45 @@
+.section__four {
+	min-height: 100vh;
+	background: white;
+	color: $blue-250;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+
+	&__text {
+		padding: 5rem 0;
+		font-size: 4rem;
+		font-family: $display-font;
+		@include md-max {
+			font-size: 2rem;
+		}
+	}
+
+	&__grid__container {
+		display: grid;
+		grid-column-gap: 2rem;
+		grid-template-columns: repeat(4, 1fr);
+		margin-bottom: 10rem;
+
+		@include md-max {
+			grid-template-columns: repeat(2, 1fr);
+			grid-row-gap: 8rem;
+		}
+
+		@include sm-max {
+			grid-template-columns: 1fr;
+		}
+	}
+	.contact__link {
+		a {
+			font-size: 2rem;
+			font-family: $display-font;
+			color: $blue-250;
+			background: $dark-beige;
+			padding: 2rem 6rem;
+			border-radius: 0.5rem;
+		}
+	}
+}
