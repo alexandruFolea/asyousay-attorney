@@ -1,12 +1,10 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import SectionOne from '../components/sections/SectionOne';
 import SectionTwo from '../components/sections/section-two/SectionTwo';
 import SectionThree from '../components/sections/section-three/SectionThree';
 import SectionFour from '../components/sections/section-four/SectionFour';
 import SectionFive from '../components/sections/section-five/SectionFive';
 import SectionSix from '../components/sections/section-6/SectionSix';
-import Practice from './practice';
 
 export default function Home() {
 	return (
@@ -20,7 +18,7 @@ export default function Home() {
 			<SectionOne />
 			<SectionFour />
 			<SectionThree />
-			<Practice />
+			<SectionTwo />
 			<SectionFive />
 			<SectionSix />
 		</div>

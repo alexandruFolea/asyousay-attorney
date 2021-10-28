@@ -1,58 +1,59 @@
 import Link from 'next/link';
-import React from 'react';
-import GridItem from './GridItem';
-import { BsChevronDoubleDown } from 'react-icons/bs';
+
 import ArrowDown from '../../ArrowDown';
 
 const SectionTwo = () => {
 	return (
-		<div className='section__two' id='section__two'>
-			<div className='section__two__text'>
-				<h2>Legal are of expertise</h2>
+		<div className='section__two'>
+			<div className='section__two__wrapper'>
+				<div className='section__two__title'>
+					<h1>Area of expertise we cover</h1>
+				</div>
+				<div className='section__two__grid__container'>
+					<div className='section__two__grid__item'>
+						<Link href='/practice'>
+							<a>
+								<h1>commercial</h1>
+							</a>
+						</Link>
+					</div>
+					<div className='section__two__grid__item'>
+						<Link href='/practice'>
+							<a>
+								<h1>corporate</h1>
+							</a>
+						</Link>
+					</div>
+					<div className='section__two__grid__item'>
+						<Link href='/practice'>
+							<a>
+								<h1>matrimonial</h1>
+							</a>
+						</Link>
+					</div>
+					<div className='section__two__grid__item'>
+						<Link href='/practice'>
+							<a>
+								<h1>international</h1>
+							</a>
+						</Link>
+					</div>
+					<div className='section__two__grid__item '>
+						<Link href='/practice'>
+							<a>
+								<h1>litigation</h1>
+							</a>
+						</Link>
+					</div>
+					<div className='section__two__grid__item '>
+						<Link href='/practice'>
+							<a>
+								<h1>and more...</h1>
+							</a>
+						</Link>
+					</div>
+				</div>
 			</div>
-			<div className='section__two__grid__container'>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Commercial' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Corporate' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Business Agreements' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Family' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Intelectual Property' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='Emplyment' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='FSLA Litigation' />
-					</a>
-				</Link>
-				<Link href='/practice'>
-					<a>
-						<GridItem practice='International' />
-					</a>
-				</Link>
-			</div>
-			<ArrowDown />
 		</div>
 	);
 };

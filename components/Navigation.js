@@ -27,7 +27,12 @@ const Navigation = () => {
 
 				<li onClick={handleClick}>
 					<Link href='/attorneys'>
-						<a>our attorneys</a>
+						<a>Team</a>
+					</Link>
+				</li>
+				<li onClick={handleClick}>
+					<Link href='/practice'>
+						<a>Services</a>
 					</Link>
 				</li>
 				<li onClick={handleClick}>

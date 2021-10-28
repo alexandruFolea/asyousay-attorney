@@ -17,9 +17,13 @@ const Practice = () => {
 	};
 
 	return (
-		<>
+		<div className='practice__page__wrapper'>
 			<div className='practice__title'>
-				<h1>Our team expertise includes </h1>
+				<h1>A complete list of our services </h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+					aliquam, natus cum beatae doloribus ipsa!
+				</p>
 			</div>
 			<div className='practice__page'>
 				<div className='practice__tabs'>
@@ -132,7 +136,7 @@ const Practice = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
