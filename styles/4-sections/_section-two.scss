@@ -37,23 +37,21 @@
 		.section__two__grid__item {
 			height: 100%;
 			width: 100%;
-			border: 0.1rem solid $light-beige;
+			border: 0.2rem solid $light-beige;
 			background: $blue-250;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			// cursor: pointer;
+
 			transition: all 0.23s ease-in;
+			box-shadow: $box-shadow;
 
 			&:hover {
-				background: $light-beige;
-				transform: scale(1.02) translateY(-0.5rem);
-				transform-origin: center;
+				background: linear-gradient($light-beige, $dark-beige);
 				color: $blue-250;
-				box-shadow: $box-shadow;
+				box-shadow: $box-shadow-dark;
 
 				a {
-					padding: 0 0 1rem 0;
 					color: $blue-250;
 				}
 			}
@@ -68,7 +66,6 @@
 
 					&:hover {
 						font-weight: 400;
-						text-shadow: $box-shadow;
 					}
 				}
 			}

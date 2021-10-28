@@ -7,7 +7,7 @@ const SectionTwo = () => {
 		<div className='section__two'>
 			<div className='section__two__wrapper'>
 				<div className='section__two__title'>
-					<h1>Area of expertise we cover</h1>
+					<h1>Quick preview at the services we provide</h1>
 				</div>
 				<div className='section__two__grid__container'>
 					<div className='section__two__grid__item'>

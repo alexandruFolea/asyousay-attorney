@@ -3,6 +3,7 @@
 	background: $blue-250;
 	color: $mono-800;
 	position: relative;
+	box-shadow: $box-shadow-dark;
 
 	&__wrapper {
 		height: 100%;
@@ -27,7 +28,7 @@
 		margin-bottom: 10rem;
 
 		.top__text {
-			padding: 4rem 0;
+			padding: 4rem 2rem;
 			width: 100%;
 			flex: 0.4;
 			display: flex;
@@ -41,9 +42,16 @@
 
 				&:nth-of-type(1) {
 					margin-right: 5rem;
+
+					@include md-max {
+						margin-right: 2rem;
+					}
 				}
 				&:nth-of-type(2) {
 					margin-left: 5rem;
+					@include md-max {
+						margin-left: 2rem;
+					}
 				}
 			}
 
@@ -51,6 +59,11 @@
 				height: 10rem;
 				width: 10rem;
 				color: $light-beige;
+
+				@include md-max {
+					height: 8rem;
+					width: 8rem;
+				}
 			}
 		}
 
@@ -60,7 +73,7 @@
 			padding-bottom: 4rem;
 
 			@include md-max {
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 				padding-bottom: 0;
 			}
 
@@ -77,6 +90,10 @@
 		grid-template-columns: 1fr 1fr;
 		@include md-max {
 			grid-template-columns: 1fr;
+			// padding: 0 2rem;
+		}
+		@include md {
+			padding-left: 2rem;
 		}
 
 		.item {

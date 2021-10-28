@@ -10,9 +10,7 @@
 		font-family: $main-font;
 
 		.page__title {
-			// height: 20rem;
-			// padding-bottom: 5rem;
-			// border-bottom: 0.2rem solid rgba($blue-250, 0.4);
+			padding-left: 2rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -62,18 +60,26 @@
 		}
 
 		.attorney__info__intro {
-			margin: 2rem 0 4rem 0;
+			margin: 2rem 0 4rem 2rem;
 			font-size: 3rem;
 			color: $mono-200;
 			padding-bottom: 1rem;
 			display: inline-block;
-
 			border-bottom: 0.2rem solid $light-beige;
 		}
 		.attorney__info__container {
 			height: 60rem;
 			display: grid;
 			grid-template-columns: 1.5fr 6fr;
+
+			@include md-max {
+				height: 100%;
+				width: 100%;
+				padding: 2rem;
+				grid-template-columns: 1fr;
+				grid-gap: 4rem;
+			}
+
 			box-shadow: $box-shadow;
 			padding: 4rem 0;
 			grid-gap: 2rem;
@@ -90,33 +96,37 @@
 					@include flex-center-row;
 					// margin-bottom: 2rem;
 					background: $blue-250;
-					border: 0.2rem solid $light-beige;
+					border: 0.1rem solid $light-beige;
 					padding: 2rem 0;
 
 					&:hover {
 						background: $light-beige;
-						border: 0.1rem solid $blue-250;
 
 						button {
 							color: $blue-250;
 						}
 					}
-				}
-				button {
-					// padding: 1rem 2rem;
-					font-family: $display-font;
-					color: $mono-800;
-					text-align: start;
-					cursor: pointer;
-					font-size: 2rem;
+					button {
+						// padding: 1rem 2rem;
+						font-size: 1rem;
+						font-family: $display-font;
+						color: $mono-800;
+						text-align: start;
+						cursor: pointer;
+						font-size: 2rem;
 
-					&:hover {
-						font-weight: 800;
-						color: $mono-900;
-					}
+						@include lg-max {
+							font-size: 1.4rem;
+						}
 
-					&.active {
-						font-weight: 800;
+						&:hover {
+							font-weight: 800;
+							color: $mono-900;
+						}
+
+						&.active {
+							font-weight: 800;
+						}
 					}
 				}
 			}
@@ -126,6 +136,11 @@
 				width: 100%;
 				border-left: 0.2rem solid rgba($blue-250, 0.4);
 				padding-left: 2rem;
+
+				@include md-max {
+					width: initial;
+					height: initial;
+				}
 				.attorney {
 					display: none;
 				}
@@ -143,6 +158,10 @@
 							h1 {
 								font-size: 2.5rem;
 								margin-bottom: 3rem;
+
+								@include lg-max {
+									font-size: 2rem;
+								}
 								span {
 									font-weight: 400;
 								}
@@ -151,6 +170,10 @@
 							h3 {
 								font-size: 2rem;
 								margin-bottom: 3rem;
+
+								@include lg-max {
+									font-size: 1.8rem;
+								}
 
 								span {
 									font-weight: 400;
@@ -161,6 +184,9 @@
 						.attorney__card__right {
 							p {
 								font-size: 2rem;
+								@include lg-max {
+									font-size: 1.4rem;
+								}
 								font-weight: 800;
 								margin-bottom: 2.4rem;
 
@@ -179,6 +205,7 @@
 
 		.attorneys__page__more__info {
 			margin: 5rem 0 10rem 0;
+			padding: 0 2rem;
 			// height: 30rem;
 
 			.attorneys__page__more__info__top {
@@ -186,6 +213,9 @@
 					color: $mono-200;
 					margin-bottom: 2rem;
 					font-size: 2.5rem;
+					@include lg-max {
+						font-size: 2rem;
+					}
 				}
 
 				p {
