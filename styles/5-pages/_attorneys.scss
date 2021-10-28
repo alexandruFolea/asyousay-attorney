@@ -1,0 +1,12 @@
+.attorneys__page {
+	min-height: 100vh;
+	width: 100vw;
+	background: cyan;
+
+	.attorneys__page__wrapper {
+		min-height: 100vh;
+		width: 100%;
+		max-width: 130rem;
+		margin: 0 auto;
+	}
+}

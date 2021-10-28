@@ -1,14 +1,18 @@
 .navbar {
 	width: 100%;
 	max-width: 130rem;
+	font-family: $main-font;
 	margin: 0 auto;
 	padding: 2rem;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	font-family: $main-font;
+	position: sticky;
+	top: 0;
+	z-index: 200;
+	background: $mono-900;
+	box-shadow: $box-shadow;
 
 	&__logo {
 		font-size: 2rem;

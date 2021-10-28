@@ -1,4 +1,5 @@
 import TestimonialCard from './TestimonialCard';
+import ArrowDown from '../../ArrowDown';
 
 const SectionFive = () => {
 	return (
@@ -17,6 +18,7 @@ const SectionFive = () => {
 					<TestimonialCard />
 				</div>
 			</div>
+			<ArrowDown />
 		</div>
 	);
 };

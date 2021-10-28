@@ -6,6 +6,7 @@ import SectionThree from '../components/sections/section-three/SectionThree';
 import SectionFour from '../components/sections/section-four/SectionFour';
 import SectionFive from '../components/sections/section-five/SectionFive';
 import SectionSix from '../components/sections/section-6/SectionSix';
+import Practice from './practice';
 
 export default function Home() {
 	return (
@@ -17,9 +18,9 @@ export default function Home() {
 			</Head>
 
 			<SectionOne />
-			<SectionTwo />
-			<SectionThree />
 			<SectionFour />
+			<SectionThree />
+			<Practice />
 			<SectionFive />
 			<SectionSix />
 		</div>

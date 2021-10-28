@@ -9,11 +9,8 @@ const SectionOne = () => {
 					<span>for themselves</span>
 				</h1>
 			</div>
-			<Link href='#section__two'>
-				<a>
-					<ArrowDown />
-				</a>
-			</Link>
+
+			<ArrowDown />
 		</div>
 	);
 };

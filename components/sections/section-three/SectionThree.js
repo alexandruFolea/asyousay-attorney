@@ -91,11 +91,7 @@ const SectionThree = () => {
 					</div>
 				</div>
 			</div>
-			<Link href='#section__four'>
-				<a>
-					<ArrowDown />
-				</a>
-			</Link>
+			<ArrowDown />
 		</div>
 	);
 };

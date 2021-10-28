@@ -14,11 +14,7 @@ const FooterCenter = () => {
 						<a>home</a>
 					</Link>
 				</li>
-				<li>
-					<Link href='/practice'>
-						<a>practice areas</a>
-					</Link>
-				</li>
+
 				<li>
 					<Link href='/attorneys'>
 						<a>our attorneys</a>
