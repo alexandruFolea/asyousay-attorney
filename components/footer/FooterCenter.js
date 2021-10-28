@@ -17,7 +17,12 @@ const FooterCenter = () => {
 
 				<li>
 					<Link href='/attorneys'>
-						<a>our attorneys</a>
+						<a>Meet the Team</a>
+					</Link>
+				</li>
+				<li>
+					<Link href='/attorneys'>
+						<a>Services</a>
 					</Link>
 				</li>
 				<li>
