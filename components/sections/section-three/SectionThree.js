@@ -91,7 +91,7 @@ const SectionThree = () => {
 					</div>
 				</div>
 			</div>
-			<ArrowDown />
+			{/* <ArrowDown /> */}
 		</div>
 	);
 };

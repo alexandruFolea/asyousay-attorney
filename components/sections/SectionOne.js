@@ -10,7 +10,7 @@ const SectionOne = () => {
 				</h1>
 			</div>
 
-			<ArrowDown />
+			{/* <ArrowDown /> */}
 		</div>
 	);
 };

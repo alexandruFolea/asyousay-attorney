@@ -18,7 +18,6 @@ const SectionFive = () => {
 					<TestimonialCard />
 				</div>
 			</div>
-			<ArrowDown />
 		</div>
 	);
 };

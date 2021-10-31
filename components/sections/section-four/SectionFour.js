@@ -58,7 +58,6 @@ const SectionFour = () => {
 					/>
 				</SwiperSlide>
 			</Swiper>
-			<ArrowDown />
 		</div>
 	);
 };

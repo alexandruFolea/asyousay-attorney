@@ -17,6 +17,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+
+		@include sm-max {
+			width: 100vw;
+			// background: red;
+		}
 	}
 
 	&__top {
@@ -51,6 +56,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 10rem;
 		@include md-max {
+			margin-top: 5rem;
 			grid-template-columns: 1fr;
 			padding: 0 4rem;
 		}
