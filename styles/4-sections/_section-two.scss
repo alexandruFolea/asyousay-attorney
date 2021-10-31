@@ -43,12 +43,19 @@
 
 		@include sm-max {
 			width: 100%;
+			grid-template-columns: 1fr;
+			padding: 0 2rem;
 		}
 
 		.section__two__grid__item {
 			height: 100%;
 			width: 100%;
 			background: $blue-250;
+			color: $light-beige;
+			font-size: 2rem;
+			text-transform: uppercase;
+			font-family: $main-font;
+
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -57,27 +64,11 @@
 			box-shadow: $box-shadow;
 
 			&:hover {
-				background: linear-gradient($light-beige, $dark-beige);
+				background: $light-beige;
 				color: $blue-250;
 				box-shadow: $box-shadow-dark;
-
-				a {
-					color: $blue-250;
-				}
-			}
-
-			a {
-				color: $light-beige;
-				font-family: $main-font;
-				text-transform: uppercase;
-
-				h1 {
-					// font-weight: 800;
-					font-weight: 400;
-
-					&:hover {
-					}
-				}
+				font-weight: bold;
+				transform: translateY(-1rem);
 			}
 		}
 	}

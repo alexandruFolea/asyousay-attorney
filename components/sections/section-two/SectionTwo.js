@@ -10,48 +10,25 @@ const SectionTwo = () => {
 					<h1>Quick preview at the services we provide</h1>
 				</div>
 				<div className='section__two__grid__container'>
-					<div className='section__two__grid__item'>
-						<Link href='/practice'>
-							<a>
-								<h1>commercial</h1>
-							</a>
-						</Link>
-					</div>
-					<div className='section__two__grid__item'>
-						<Link href='/practice'>
-							<a>
-								<h1>corporate</h1>
-							</a>
-						</Link>
-					</div>
-					<div className='section__two__grid__item'>
-						<Link href='/practice'>
-							<a>
-								<h1>matrimonial</h1>
-							</a>
-						</Link>
-					</div>
-					<div className='section__two__grid__item'>
-						<Link href='/practice'>
-							<a>
-								<h1>international</h1>
-							</a>
-						</Link>
-					</div>
-					<div className='section__two__grid__item '>
-						<Link href='/practice'>
-							<a>
-								<h1>litigation</h1>
-							</a>
-						</Link>
-					</div>
-					<div className='section__two__grid__item '>
-						<Link href='/practice'>
-							<a>
-								<h1>and more...</h1>
-							</a>
-						</Link>
-					</div>
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>commercial</a>
+					</Link>
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>corporate</a>
+					</Link>
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>matrimonial</a>
+					</Link>
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>international</a>
+					</Link>
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>litigation</a>
+					</Link>
+
+					<Link href='/practice'>
+						<a className='section__two__grid__item'>and more...</a>
+					</Link>
 				</div>
 			</div>
 		</div>

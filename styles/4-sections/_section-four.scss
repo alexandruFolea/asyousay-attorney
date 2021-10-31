@@ -5,14 +5,23 @@
 
 .swiper {
 	width: 100%;
-	min-height: 70vh;
+	min-height: 75vh;
 	padding-bottom: 10rem;
+	// background: red;
+
+	.swiper-wrapper {
+		// margin-bottom: 10rem;
+		// @include sm-max {
+		// 	margin-bottom: 5rem;
+		// }
+	}
 
 	.swiper-button-prev {
 		left: 20%;
 	}
 	.swiper-button-next {
 		right: 20%;
+		// top: 100%;
 	}
 
 	.swiper-button-next,
@@ -20,7 +29,9 @@
 		color: $blue-250;
 
 		@include md-max {
-			display: none;
+			// display: none;
+			top: 95%;
+			// margin-top: 0;
 		}
 
 		&:hover {
@@ -35,8 +46,9 @@
 		text-align: center;
 		display: flex;
 		justify-content: center;
-
 		align-items: center;
+
+		// margin-bottom: 2rem;
 	}
 
 	.swiper-slide img {
@@ -44,6 +56,16 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+	.swiper-pagination {
+		// background: red;
+		// padding: 2rem 0;
+		.swiper-pagination-bullet {
+			background: $light-beige;
+			border-radius: 0;
+			width: 2.6rem;
+			height: 1rem;
+		}
 	}
 }
 
