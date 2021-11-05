@@ -1,7 +1,11 @@
-const AttorneyInfo = ({ name, title, education, experience, moto }) => {
+import Image from 'next/image';
+const AttorneyInfo = ({ name, title, education, experience, moto, image }) => {
 	return (
 		<div className='attorney__card'>
 			<div className='attorney__card__left'>
+				<Image src={image} height={600} width={400} alt='attorney image' />
+			</div>
+			<div className='attorney__card__right'>
 				<h1>
 					Name: <span>{name}</span>
 				</h1>
@@ -11,15 +15,12 @@ const AttorneyInfo = ({ name, title, education, experience, moto }) => {
 				<h3>
 					Education: <span>{education}</span>
 				</h3>
-			</div>
-			<div className='attorney__card__right'>
 				<p>
 					Experience: <span>{experience}</span>
 				</p>
 				<p>
 					Life moto: <span>{moto}</span>
 				</p>
-				{/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia quas dolorem aliquam modi, error necessitatibus a, consequuntur sapiente amet commodi porro illo corrupti tenetur aperiam doloribus quasi qui dolores.</p> */}
 			</div>
 		</div>
 	);

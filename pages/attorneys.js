@@ -48,45 +48,37 @@ const Attorneys = () => {
 				<h1 className='attorney__info__intro'>Meet the brains</h1>
 				<div className='attorney__info__container'>
 					<div className='attorney__tabs'>
-						<div>
-							<button
-								className={
-									toggleState === 1 ? 'attorney__tab active' : 'attorney__tab'
-								}
-								onClick={() => toggleTab(1)}
-							>
-								Alicia Preston
-							</button>
+						<div
+							className={
+								toggleState === 1 ? 'attorney__tab active' : 'attorney__tab'
+							}
+							onClick={() => toggleTab(1)}
+						>
+							<h2>Alicia Preston</h2>
 						</div>
-						<div>
-							<button
-								className={
-									toggleState === 2 ? 'attorney__tab active' : 'attorney__tab'
-								}
-								onClick={() => toggleTab(2)}
-							>
-								Kiran Marmitton
-							</button>
+						<div
+							className={
+								toggleState === 2 ? 'attorney__tab active' : 'attorney__tab'
+							}
+							onClick={() => toggleTab(2)}
+						>
+							<h2> Kiran Marmitton</h2>{' '}
 						</div>
-						<div>
-							<button
-								className={
-									toggleState === 3 ? 'attorney__tab active' : 'attorney__tab'
-								}
-								onClick={() => toggleTab(3)}
-							>
-								Olivia Benchmark
-							</button>
+						<div
+							className={
+								toggleState === 3 ? 'attorney__tab active' : 'attorney__tab'
+							}
+							onClick={() => toggleTab(3)}
+						>
+							<h2>Olivia Benchmark</h2>
 						</div>
-						<div>
-							<button
-								className={
-									toggleState === 4 ? 'attorney__tab active' : 'attorney__tab'
-								}
-								onClick={() => toggleTab(4)}
-							>
-								Jessie Belluci
-							</button>
+						<div
+							className={
+								toggleState === 4 ? 'attorney__tab active' : 'attorney__tab'
+							}
+							onClick={() => toggleTab(4)}
+						>
+							<h2>Jessie Belluci</h2>
 						</div>
 					</div>
 
@@ -97,10 +89,11 @@ const Attorneys = () => {
 							}
 						>
 							<AttorneyInfo
+								image='/2.jpeg'
 								name='Alicia Preston'
 								title='Executive Director 🧑‍⚖️'
 								education='Boston College'
-								experience='has been in the field for x years'
+								experience='has been in the field for 12 years'
 								moto='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores debitis itaque quibusdam voluptates exercitationem fugiat omnis vero deserunt error adipisci rem porro consequuntur quod reprehenderit id eligendi atque, sit sint quae nesciunt! Obcaecati nemo consectetur hic quisquam provident? Ex.'
 							/>
 						</div>
@@ -110,6 +103,7 @@ const Attorneys = () => {
 							}
 						>
 							<AttorneyInfo
+								image='/6.jpeg'
 								name='Kiran Marmitton'
 								title='Head Attorney  😎'
 								education='University of South Carolina'
@@ -123,10 +117,11 @@ const Attorneys = () => {
 							}
 						>
 							<AttorneyInfo
+								image='/4.jpeg'
 								name='Olivia Benchmark'
 								title='Head of Humar Resources'
 								education='University of Manchester'
-								experience='has been in the field for x years'
+								experience='has been in the field for 8 years'
 								moto='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores debitis itaque quibusdam voluptates exercitationem fugiat omnis vero deserunt error adipisci rem porro consequuntur quod reprehenderit id eligendi atque, sit sint quae nesciunt! Obcaecati nemo consectetur hic quisquam provident? Ex.'
 							/>
 						</div>
@@ -136,10 +131,11 @@ const Attorneys = () => {
 							}
 						>
 							<AttorneyInfo
+								image='/5.jpeg'
 								name='Jessie Belluci'
 								title='Client Representative'
 								education='University of Illinois @Chicago'
-								experience='has been in the field for 24 years'
+								experience='has been in the field for 13 years'
 								moto='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores debitis itaque quibusdam voluptates exercitationem fugiat omnis vero deserunt error adipisci rem porro consequuntur quod reprehenderit id eligendi atque, sit sint quae nesciunt! Obcaecati nemo consectetur hic quisquam provident? Ex.'
 							/>
 						</div>

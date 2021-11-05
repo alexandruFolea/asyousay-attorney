@@ -68,7 +68,7 @@
 			border-bottom: 0.2rem solid $light-beige;
 		}
 		.attorney__info__container {
-			height: 60rem;
+			// height: 60rem;
 			display: grid;
 			grid-template-columns: 1.5fr 6fr;
 
@@ -94,39 +94,16 @@
 				div {
 					width: 100%;
 					@include flex-center-row;
-					// margin-bottom: 2rem;
 					background: $blue-250;
+					color: $light-beige;
 					border: 0.1rem solid $light-beige;
 					padding: 2rem 0;
+					cursor: pointer;
 
 					&:hover {
 						background: $light-beige;
-
-						button {
-							color: $blue-250;
-						}
-					}
-					button {
-						// padding: 1rem 2rem;
-						font-size: 1rem;
-						font-family: $display-font;
-						color: $mono-800;
-						text-align: start;
-						cursor: pointer;
-						font-size: 2rem;
-
-						@include lg-max {
-							font-size: 1.4rem;
-						}
-
-						&:hover {
-							font-weight: 800;
-							color: $mono-900;
-						}
-
-						&.active {
-							font-weight: 800;
-						}
+						color: $blue-250;
+						box-shadow: 0 0.2rem 1rem black;
 					}
 				}
 			}
@@ -146,18 +123,35 @@
 				}
 
 				.active-attorney {
-					display: block;
+					display: flex;
 
 					.attorney__card {
 						width: 100%;
 						height: 100%;
-						display: block;
+						display: flex;
 						color: $mono-200;
 
+						@include md-max {
+							flex-direction: column;
+						}
+
 						.attorney__card__left {
+							// margin-right: 2rem;
+
+							@include md-max {
+								padding-bottom: 2rem;
+							}
+							flex: 0.8;
+							img {
+								object-fit: cover;
+							}
+						}
+
+						.attorney__card__right {
+							flex: 1;
 							h1 {
 								font-size: 2.5rem;
-								margin-bottom: 3rem;
+								margin-bottom: 1rem;
 
 								@include lg-max {
 									font-size: 2rem;
@@ -169,7 +163,7 @@
 
 							h3 {
 								font-size: 2rem;
-								margin-bottom: 3rem;
+								margin-bottom: 1rem;
 
 								@include lg-max {
 									font-size: 1.8rem;
@@ -179,16 +173,13 @@
 									font-weight: 400;
 								}
 							}
-						}
-
-						.attorney__card__right {
 							p {
 								font-size: 2rem;
 								@include lg-max {
 									font-size: 1.4rem;
 								}
 								font-weight: 800;
-								margin-bottom: 2.4rem;
+								margin-bottom: 1rem;
 
 								// margin-bottom: 2rem;
 

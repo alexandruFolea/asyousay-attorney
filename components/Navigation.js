@@ -40,11 +40,6 @@ const Navigation = () => {
 						<a>contact</a>
 					</Link>
 				</li>
-				<li onClick={handleClick}>
-					<Link href='/blog'>
-						<a>blog</a>
-					</Link>
-				</li>
 			</ul>
 		</nav>
 	);

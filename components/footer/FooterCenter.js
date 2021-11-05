@@ -30,11 +30,6 @@ const FooterCenter = () => {
 						<a>contact</a>
 					</Link>
 				</li>
-				<li>
-					<Link href='/blog'>
-						<a>blog</a>
-					</Link>
-				</li>
 			</ul>
 		</div>
 	);
